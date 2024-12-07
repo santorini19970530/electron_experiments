@@ -25,6 +25,7 @@
     "autoprefixer": "^10.4.20",
     "css-loader": "^6.11.0",
     "electron": "33.2.1",
+    "file-loader": "^6.2.0",
     "node-loader": "^2.1.0",
     "postcss": "^8.4.49",
     "postcss-loader": "^8.1.1",

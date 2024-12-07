@@ -37,6 +37,12 @@ module.exports = [
     include: [path.resolve(__dirname, "app/src")],
     use: ["style-loader", "css-loader", "postcss-loader"],
   },
+
+  // load image files
+  {
+    test: /\.(png|jpe?g|gif|svg)$/i,
+    type: "asset/resource", // Use asset resources to manage images
+  },
   /**
    * Typescript Example:
    *

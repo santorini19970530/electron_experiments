@@ -10,12 +10,16 @@ if (started) {
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1800,
+    height: 1500,
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
+      contextIsolation: true,
+      enableRemoteModule: false,
     },
-    autoHideMenuBar: true, // hide the window menu bar
+    transparent: false,
+    autoHideMenuBar: true,
+    frame: true,
   });
 
   // and load the index.html of the app.
